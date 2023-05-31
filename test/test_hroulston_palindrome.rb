@@ -3,11 +3,8 @@
 require "test_helper"
 
 class TestHroulstonPalindrome < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::HroulstonPalindrome::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert true
+ 
+  def test_for_non_palindrome
+    assert !"apple".palindrome?
   end
 end
