@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require_relative "lib/hroulston_palindrome/version"
 
 Gem::Specification.new do |spec|
@@ -7,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["hroulston"]
   spec.email = ["h_roulston@live.com\n"]
 
-  spec.summary = %q{Palindrome detector}
-  spec.description = %q{Learn Enough Ruby Palindrome detector}
+  spec.summary = "Palindrome Detector"
+  spec.description = "Learn Enough Ruby Palindrome detector"
   spec.homepage = "https://github.com/hroulston/hroulston_palindrome"
   spec.required_ruby_version = ">= 2.6.0"
 

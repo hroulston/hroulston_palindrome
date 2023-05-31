@@ -2,8 +2,7 @@
 
 require_relative "hroulston_palindrome/version"
 
-class String 
-
+class String
   def palindrome?
     processed_content == processed_content.reverse
   end

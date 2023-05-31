@@ -13,7 +13,7 @@ class TestHroulstonPalindrome < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    skip 
+    skip
   end
 
   def test_palindrome_with_punctuation
