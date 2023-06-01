@@ -5,7 +5,7 @@ require "test_helper"
 class TestHroulstonPalindrome < Minitest::Test
  
   def test_non_palindrome
-    assert !"apple".palindrome?
+    refute "apple".palindrome?
   end
 
   def test_literal_palindrome
@@ -13,10 +13,14 @@ class TestHroulstonPalindrome < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    skip
+    assert "RaceCar".palindrome?
   end
 
   def test_palindrome_with_punctuation
-    skip
+    assert "Madam, I'm Adam.".palindrome?
+  end
+
+  def test_letters
+    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
   end
 end
