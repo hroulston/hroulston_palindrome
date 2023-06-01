@@ -2,7 +2,7 @@
 
 require_relative "hroulston_palindrome/version"
 
-class String
+module HroulstonPalindrome
   def palindrome?
     processed_content == processed_content.reverse
   end
@@ -18,6 +18,14 @@ class String
   private
     
     def processed_content
-      self.scan(/[a-z]/i).join.downcase
+      self.to_s.scan(/[a-z\d]/i).join.downcase
     end
+end
+
+class String
+  include HroulstonPalindrome
+end
+
+class Integer
+  include HroulstonPalindrome
 end
